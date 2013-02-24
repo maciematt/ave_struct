@@ -18,4 +18,4 @@ Output:
 
 structure.ave - the average structure file based on the minimal RMSD alignment of the models constituing structure.pdb.
 structure.rot.pdb - a version of structure.pdb with all models aligned.
-stdout - the RMSD of the alignment is printed in stdout.
+stdout - the RMSD of the alignment (averaged for the models of structure.pdb) relative to structure.ave is printed in stdout.
