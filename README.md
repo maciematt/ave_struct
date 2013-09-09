@@ -1,6 +1,8 @@
 kabsch_alignment
 ================
 
+This script takes in a pdb with multiple models, aligns them as specified using the Kabsch algorithm and calculates the average model, then spits out the RMSD between the average model and the original models.
+
 I wrote this script while calculating structures of multidomain proteins using CYANA. I wanted to know the domain-wise rmsds and couldn't find any software that did that. At first I tried modifying Cameron Mura's script for PyMOL, but the PyMOL library is horribly slow at this task (the bottleneck being the calculation of the mean structure relative to which the rmsds of the structures at hand are to be calculated).
 
 What ended up being a good solution was performing the same task using numpy to avoid the PyMOL overhead. The resulting script aligns models within a pdb on the portion of choice via the Kabsch algorithm. A lot of this code (and the inspiration to write it) was based on the Kabsch script written by Jason Vertrees, available on the PyMOL wiki.
