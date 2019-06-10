@@ -11,13 +11,13 @@ What ended up being a good solution was performing the same task using numpy to 
 Requires: numpy
 
 
-Usage: ./kabsch_aveStruct.py structure.pdb n+ca+c 15-52
+Usage: `./kabsch_aveStruct.py structure.pdb n+ca+c 15-52`
 
-Where structure.pdb is the structure with multiple models to be aligned, n+ca+c is the PyMOL-formatted types of atoms used in the alignment (this can be any atom range, like ca, or n+ca+c+o for MOLMOL-style backbone heavy atoms), and 15-52 is the the PyMOL-formatted residue range used in the alignment (so it could be multiple ranges linked with a + sign, like 15-52+67-82).
+Where `structure.pdb` is the structure with multiple models to be aligned, `n+ca+c` is the PyMOL-formatted types of atoms used in the alignment (this can be any atom range, like `ca`, or `n+ca+c+o` for MOLMOL-style backbone heavy atoms), and `15-52` is the the PyMOL-formatted residue range used in the alignment (so it could be multiple ranges linked with a + sign, like `15-52+67-82`).
 
 
 Output: 
 
-structure.ave - the average structure file based on the minimal RMSD alignment of the models constituing structure.pdb.
-structure.rot.pdb - a version of structure.pdb with all models aligned.
-stdout - the RMSD of the alignment (averaged for the models of structure.pdb) relative to structure.ave is printed in stdout.
+`structure.ave` - the average structure file based on the minimal RMSD alignment of the models constituing `structure.pdb`.
+`structure.rot.pdb` - a version of `structure.pdb` with all models aligned.
+stdout - the RMSD of the alignment (averaged for the models of `structure.pdb`) relative to `structure.ave` is printed in stdout.
