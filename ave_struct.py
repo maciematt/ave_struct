@@ -3,7 +3,7 @@
 
 """
 This script takes in a pdb with multiple models, aligns them as specified using the Kabsch algorithm and calculates the average model, then spits out the RMSD between the average model and the original models.
-Usage: ./kabsch_aveStruct.py [infile] [residue range] [atoms types]
+Usage: ./ave_struct.py [infile] [residue range] [atoms types]
 [residue range] is the residue range of a given domain given in PyMOL format, i.e. low1-high1+low2-high2 etc., same goes for [atom types], eg. n+ca+c (write 'all' to include all atom types).
 
 """
